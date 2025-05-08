@@ -41,6 +41,7 @@ jobs:
      uses: docker-practice/actions-setup-docker@v1
      with:
       docker_version: '24.04'
+      
    - name: Build Docker Image
      run: docker build -f Dockerfile -t myapp:latest .
 
